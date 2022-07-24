@@ -1,16 +1,16 @@
-var count = 0;
-var TIME_CLICKER = 10;
-var record = 0;
+let count = 0;
+const TIME_CLICKER = 10;
+let record = 0;
 
-var clicker = document.getElementById("clicker");
+const clicker = document.getElementById("clicker");
 clicker.addEventListener("click", touch_button);
 
 function touch_button(){
     if (count == 0){
-        var start = Date.now();
+        let start = Date.now();
 
-        var time = setInterval(function(){
-            var delta = Date.now() - start;
+        const time = setInterval(function(){
+            let delta = Date.now() - start;
             if(Math.floor(delta/1000 < TIME_CLICKER+1)){
                 const timer = document.getElementById("timer");
                 timer.textContent = Math.floor(delta/1000);
