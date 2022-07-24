@@ -1,0 +1,38 @@
+body{
+    background-color: #ffaf87;
+}
+
+.center-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.button-click{
+    margin-top: 400px;
+    display: inline-block;
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    
+    background-color: #4ce0b3;
+    
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.button-click h1{
+    margin-top: 0;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.button-click:hover{
+    background-color: #44d7ab;
+}
+.button-click:active{
+    border: 1px solid #279c79;
+}
+
